@@ -1,14 +1,9 @@
 name: Deploy github com action
- 
-env:
-  SSH_USER: ${{ secrets.DEPLOY_SSH_USER }}
-  SSH_HOST: ${{ secrets.DEPLOY_SSH_HOST }}
- 
 on:
   push:
     branches:
       - main
- 
+
 jobs:
   build:
     name: Deploy para servidor trail
